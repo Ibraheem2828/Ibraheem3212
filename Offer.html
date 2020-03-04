@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Offer</title>
+<link rel="stylesheet" type="text/css" href="indexstyle.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+<!--This is the navigation bar-->
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="Contact.html">Contact</a>
+  <a href="Products.html">Product</a>
+  <a href="Login.html">Login/Signup</a>
+  <a class="active" href="Offer.html">Offer</a>
+  <a href="Checkout.html">Checkout</a>
+    <a href="Trailers.html">Trailers</a>
+</div>
+
+
+<!--This is the Offer Page-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    <!-- add jQuery library -->
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+<figure class="snip">                <!-- first -->
+    <h4>Playstation VR</h4>
+    <div class="image">
+      <img class="slide1" src="Resources/Offer3.jpg" width="300px" height="150px"/>
+    </div>
+    <figcaption>
+      <p>A Playstation VR with Two games</p>
+      <div class="price">
+        <s>£400.00</s><div class="real" data-price="250.00">£250.00</div>
+      </div>
+    </figcaption>
+    <a class="add-to-cart" href="#">Add to Cart</a>
+  </figure>
+
+
+  <figure class="snip">                <!-- second -->
+    <h4>PS4 Offer</h4>
+    <div class="image">
+      <img class="slide2" src="Resources/Offer1.jpg" width="300px" height="150px" />
+    </div>
+    <figcaption>
+      <p>A brand New PS4 with FIFA 20</p>
+      <div class="price">
+        <s>£300.00</s><div class="real" data-price="200.00">£200.00</div>
+      </div>
+    </figcaption>
+    <a class="add-to-cart" href="#">Add to Cart</a>
+  </figure>
+
+
+  <figure class="snip">               <!-- third -->
+    <h4>Offer for PS4</h4>
+    <div class="image">
+      <img class="slide3" src="Resources/Offer2.jpg" width="300px" height="150px" />
+    <figcaption>
+      <p>A brand New PS4 with Call Of Duty Modern Warefare</p>
+      <div class="price">
+        <s>£350.00</s><div class="real" data-price="200.50">"£200.00</div>
+      </div>
+    </figcaption>
+    <a class="add-to-cart" href="#">Add to Cart</a>
+  </figure>
+
+
+  <figure class="snip">               <!-- Fourth -->
+    <h4>PS4 Controllers</h4>
+    <div class="image">
+      <img class="slide4" src="Resources/Offer4.jpg" width="300px" height="150px" />
+    <figcaption>
+      <p>A brand new Pro PS4 Controller</p>
+      <div class="price">
+        <s>£35.00</s><div class="real" data-price="26.00">"£26.00</div>
+      </div>
+    </figcaption>
+    <a class="add-to-cart" href="#">Add to Cart</a>
+  </figure>
+  <a class="cart" href="javascript:void(0);" title="Your Cart">
+    <img src="https://4.bp.blogspot.com/-ipiLQtQy_oc/WdcKmFpW6KI/AAAAAAAABtc/mtwqfb7U_pIE18vTb8hqZiaWVngMJKm0QCLcBGAs/s1600/cart.png" />
+    <span id="count-item" data-count="0">0 item</span>
+  </a>
+  <!-- --------------------Check out ---------------- -->
+  <div class="container">
+    <div class="table">
+    <span class="empty">Your cart is empty!</span>
+    <img class="empty" src="https://2.bp.blogspot.com/-VYC7hvhUz4U/WdcPLAr86jI/AAAAAAAABuA/G3y27JwIL_0S5OsVIp6maXjsdgLRumaTwCLcBGAs/s1600/emptycart.png" style="width:200px;"/>
+    <div class="col1-name"></div>
+    <div class="col2-price"></div>
+    </div>
+    <div class="bin"><span>Clear All</span><img id="bin" src="https://4.bp.blogspot.com/-Luy983wX20I/WdcLbR86CCI/AAAAAAAABto/g-7S5lzDEugWAQrIiwOtPn4JOkQNboxyACLcBGAs/s1600/delete.png" style="width:40px" /></div>
+    <div class="total">
+      <div class="total-text">Total :</div>
+      <div class="total-amount">£ 0</div>
+    </div>
+    <div class="checkout" onclick="document.getElementById('id01').style.display='block'">Check out</div>
+
+  </div>
+
+          <!-- -----------------Bill------------- -->
+ <div id="id01" class="modal">
+  <div class="wrapper">
+    <div class="bill-content">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+    <h1 class="box-title">Checkout</h1>
+    <div class="price-total">
+      <span>PAY</span>
+      <div class="pay-last">£ 0</div>
+    </div>
+    <form>
+
+      <div class="form-text">
+        <label>Card Number</label>
+        <input name="card-number" type="text" required>
+      </div>
+      <div class="form-text">
+        <label>Card Verification Value</label>
+        <input name="name" type="text" placeholder="CVV" required>
+      </div>
+      <div class="form-text" id="col01">
+        <label>Expiry Date</label>
+        <input name="card-number" type="text" placeholder="MM/YY" maxlength="3" required>
+      </div>
+      <div class="form-text"  id="col02">
+        <label>Coupon Code</label>
+        <input name="card-number" type="text">
+      </div>
+
+      <button id="end">PAY NOW</button>
+    </form>
+      <button id="coupon">Get coupon code</button>
+    </div>
+  </div>
+ </div>
+
+
+<style>
+body {
+  background-image: url('Resources/Website.jpg');
+}
+</style>
+
+
+</body>
+</html>
+
+<script src="Offer.js"></script>
